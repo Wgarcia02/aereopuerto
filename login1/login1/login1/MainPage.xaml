@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="login1.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:login1">
+
+
+    <Grid>
+
+        <Image Aspect="AspectFill" Source="fondo1.jpg" />
+        <BoxView Opacity="0.8" Color="Gray" />
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+
+            </Grid.RowDefinitions>
+
+            <Image
+                Grid.Row="0"
+                Margin="0,50,0,30"
+                HeightRequest="100"
+                Source="fondo2.jpg"
+                WidthRequest="100" />
+
+            <StackLayout Grid.Row="1" Padding="30,20">
+                <Entry Placeholder="correo electronico" PlaceholderColor="White" />
+                <Entry
+                    IsPassword="True"
+                    Placeholder="contraseña"
+                    PlaceholderColor="White" />
+                <Button
+                    BackgroundColor="White"
+                    BorderRadius="20"
+                    Text="iniciar_sesion"
+                    TextColor="Gray" />
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="Small" Text="recuperar contraseña" />
+                    <Label
+                        FontSize="Small"
+                        HorizontalOptions="EndAndExpand"
+                        Text="registrarse" />
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+
+        </Grid>
+
+
+    </Grid>
+
+</ContentPage>
